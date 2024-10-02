@@ -71,40 +71,23 @@ print(s_foods)
 print(len(meals) - len(s_foods))
 
 
-### List comprehensions
-
-# 14: 12 as list comprehension
-s_foods = [x for x in meals if "e" in x]
-print("s_foods:", s_foods)
-
-# 15. Using a list comprehension create a list that's an
-# uppercase version of `breakfast` called `breakfast_up`.
-breakfast_up = [w.upper() for w in breakfast]
-print("breakast_up:", breakfast_up)
-
-# 16. Create a list of 6 random ints between 0 and 17
-# using a list comprehension.
-import random
-randos = [random.randint(0, 17) for i in range(6)]
-print(randos)
-
-### Functions on lists and strings.
-# 17. Create a list of words from the string
+### Functions for lists and strings.
+# 14. Create a list of words from the string
 # ``four score and four years ago``
 words = "four score and four years ago".split()
 
-# 18. Print out the count of ``four`` in that list.
+# 15. Print out the count of ``four`` in that list.
 print(words.count("four"))
 
-# 19. Find the index of first instance of the word ``four``
+# 16. Find the index of first instance of the word ``four``
 myindex = words.index("four")
 print(myindex)
 
-# 20. Use that index to replace that instance
+# 17. Use that index to replace that instance
 # of ``four`` with ``eleven``.
 words[myindex] = "eleven"
 
-# 21. Join the list back into a string called `bad_gettysburg`
+# 18. Join the list back into a string called `bad_gettysburg`
 # and print it out.
 newstring = " ".join(words)
 print(newstring)
